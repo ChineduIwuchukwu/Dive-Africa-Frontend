@@ -1,187 +1,41 @@
+:root {
+  --primary-color: green;
+  --secondary-color: red;
+}
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-.grid {
-  margin: 1rem;
-  padding: 2rem;
-  align-content: center;
+ul {
+  margin: 10px 6px;
 }
 
-.grid-item {
-  margin: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1.5rem;
-  padding: 2rem;
+ul > li:nth-last-child(odd) {
+  color: var(--primary-color);
 }
 
-.grid1,
-.grid2,
-.grid3,
-.grid4,
-.grid5,
-.grid6,
-.grid7,
-.grid8 {
-  height: 9rem;
-  align-content: center;
-  font-size: 24px;
-  padding: 1rem;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
+ul > li:nth-child(even) {
+  color: var(--secondary-color);
+}
+.background {
+  background-color: aqua;
+  width: 16rem;
+  height: 16rem;
+  margin-top: 4px;
 }
 
-/* animations for each grid item */
-.grid1 {
-  animation-name: background1;
+.background:hover {
+  background-color: bisque;
+  width: 26rem;
+  height: 26rem;
 }
 
-.grid2 {
-  animation-name: background2;
-}
-
-.grid3 {
-  animation-name: background3;
-}
-
-.grid4 {
-  animation-name: background4;
-}
-
-.grid5 {
-  animation-name: background5;
-}
-
-.grid6 {
-  animation-name: background6;
-}
-
-.grid7 {
-  animation-name: background7;
-}
-
-.grid8 {
-  animation-name: background8;
-}
-
-/* Keyframes for each grid item */
-@keyframes background1 {
-  0% {
-    background-color: azure;
-  }
-  50% {
-    background-color: rgb(119, 0, 255);
-  }
-  100% {
-    background-color: rgb(255, 127, 127);
-  }
-}
-
-@keyframes background2 {
-  0% {
-    background-color: rgb(0, 85, 100);
-  }
-  50% {
-    background-color: rgba(75, 1, 1, 0.212);
-  }
-  100% {
-    background-color: rgba(128, 3, 86, 0);
-  }
-}
-
-@keyframes background3 {
-  0% {
-    background-color: hotpink;
-  }
-  50% {
-    background-color: deeppink;
-  }
-  100% {
-    background-color: rgba(88, 13, 38, 0.24);
-  }
-}
-
-@keyframes background4 {
-  0% {
-    background-color: paleturquoise;
-  }
-  50% {
-    background-color: rgb(0, 172, 154);
-  }
-  100% {
-    background-color: rgb(2, 70, 71);
-  }
-}
-
-@keyframes background5 {
-  0% {
-    background-color: khaki;
-  }
-  50% {
-    background-color: rgb(0, 119, 255);
-  }
-  100% {
-    background-color: rgb(255, 0, 157);
-  }
-}
-
-@keyframes background6 {
-  0% {
-    background-color: darkolivegreen;
-  }
-  50% {
-    background-color: rgb(80, 80, 0);
-  }
-  100% {
-    background-color: rgb(50, 205, 84);
-  }
-}
-
-@keyframes background7 {
-  0% {
-    background-color: rgb(44, 0, 26);
-  }
-  50% {
-    background-color: rgb(11, 128, 0);
-  }
-  100% {
-    background-color: rgb(130, 0, 0);
-  }
-}
-
-@keyframes background8 {
-  0% {
-    background-color: rgb(226, 60, 0);
-  }
-  50% {
-    background-color: rgb(70, 10, 0);
-  }
-  100% {
-    background-color: rgb(0, 255, 98);
-  }
-}
-
-/* CSS media query  */
-
-@media screen and (max-width: 480px) {
-  .grid-item {
-    margin: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    padding: 2rem;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .grid-item {
-    margin: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1.5rem;
-    padding: 2rem;
-  }
+.FAB {
+  padding: 6px 1rem;
+  position: fixed;
+  bottom: 6px;
+  left: 10px;
 }
