@@ -1,0 +1,41 @@
+:root {
+  --primary-color: green;
+  --secondary-color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 10px 6px;
+}
+
+ul > li:nth-last-child(odd) {
+  color: var(--primary-color);
+}
+
+ul > li:nth-child(even) {
+  color: var(--secondary-color);
+}
+.background {
+  background-color: aqua;
+  width: 16rem;
+  height: 16rem;
+  margin-top: 4px;
+}
+
+.background:hover {
+  background-color: bisque;
+  width: 26rem;
+  height: 26rem;
+}
+
+.FAB {
+  padding: 6px 1rem;
+  position: fixed;
+  bottom: 6px;
+  left: 10px;
+}
